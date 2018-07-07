@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <script type="text/javascript" src="jquery/jquery-3.3.1.min.js"></script>
+  <script>
+    $(function() {
+        $("#txt1").focusin(function () {
+          $(this).css("background-color" , "pink");
+          $("#span1").text("input your full name")
+        })
+        $("#txt1").focusout(function () {
+          $(this).css("background-color" , "");
+          $("#span1").text("")
+        })
+        $("#txt2").focusin(function () {
+          $(this).css("background-color" , "pink");
+          $("#span2").text("input your age")
+        })
+        $("#txt2").focusout(function () {
+          $(this).css("background-color" , "");
+          $("#span2").text("")
+        })
+    });
+  </script>
+  <style>
+      div{
+        background-color: pink;
+        font-size: 20px ;
+
+      }
+  </style>
+  <title></title>
+</head>
+
+<body>
+<p>input name</p>
+<input type="text" name="" id="txt1" value=""><span id="span1"></span>
+<p>input age</p>
+<input type="text" name="" id="txt2" value=""><span id="span2"></span>
+</body>
+
+</html>

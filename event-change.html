@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <script type="text/javascript" src="jquery/jquery-3.3.1.min.js"></script>
+  <script>
+    $(function() {
+      $("#list").change(function() {
+        var listval = $("#list").val();
+        $("#showList").html(listval);
+      });
+    });
+  </script>
+
+  <title></title>
+</head>
+
+<body>
+  <p>select</p>
+  <select id="list">
+  <option value = "one">1</option>
+  <option value = "two">2</option>
+  <option value = "three">3</option>
+  <option value = "four">4</option>
+<select>
+  <p>ผลลัพธ์</p>
+  <span id ="showList" ></span>
+</body>
+
+</html>

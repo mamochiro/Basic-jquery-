@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <title>Basic</title>
+  <meta charset="utf-8">
+  <script type="text/javascript" src="jquery/jquery-3.3.1.min.js"></script>
+  <script>
+    $(function() {
+      $("#input1").keydown(function() {
+        $("#input1").css("background-color" , "yellow")
+      });
+      $("#input1").keyup(function() {
+        $("#input1").css("background-color" , "pink")
+      });
+      $("input").focus(function () {
+        $("input").css("background-color" , "orange")
+      });
+    });
+  </script>
+
+  <title></title>
+</head>
+
+<body>
+  Name : <input id="input1" type ="text" placeholder="input Name"/> <br><br>
+  Last Name : <input type ="text" placeholder="input Last Name"/>
+</body>
+
+</html>

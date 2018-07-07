@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <title>Contain selector</title>
+  <meta charset="utf-8">
+  <script type="text/javascript" src="jquery/jquery-3.3.1.min.js"></script>
+  <script>
+    $(function() {
+      $("#txtsearch").keyup(function() {
+        var searchName = $(this).val();
+        // alert(searchName)
+        $("#name li").removeClass("hightlight");
+        if (searchName != ' ') {
+          $("#names li:contains('" + searchName + "')").addClass("hightlight");
+        }
+        $("#name li").removeClass("hightlight");
+
+      });
+    });
+  </script>
+  <style>
+    .style1 {
+      background-color: yellow;
+      border: 1px dotted black;
+      width: 180px;
+      height: 90px;
+      margin-top: 20px;
+    }
+
+    ul {
+      list-style: :none;
+      padding: 0;
+      margin: 0;
+      /* background-color: pink; */
+    }
+
+    .hightlight {
+      background-color: red;
+    }
+  </style>
+  <title></title>
+</head>
+
+<body>
+  <h3>search data</h3>
+  <p>
+    <input type="text" id="txtsearch">
+  </p>
+  <ul id="names">
+    <li>Tinker</li>
+    <li>Sniper</li>
+    <li>Slada</li>
+    <li>Beatmaster</li>
+  </ul>
+</body>
+
+</html>

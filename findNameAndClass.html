@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <title>attibute</title>
+  <meta charset="utf-8">
+  <script type="text/javascript" src="jquery/jquery-3.3.1.min.js"></script>
+  <script>
+    $(function() {
+      //find by name
+      $("input[name = txt1]").val("markkie");
+      //find by class
+      $(".div1").addClass("style1");
+    });
+  </script>
+  <style>
+    .style1{
+      background-color: yellow;
+      border: 1px dotted black;
+      width: 180px;
+      height: 90px;
+      margin-top: 20px;
+    }
+  </style>
+  <title></title>
+</head>
+
+<body>
+  <input type="text" name="txt1">
+  <input type="text" name="txt2">
+  <input type="text" name="txt3">
+  <div class="div1"></div>
+</body>
+
+</html>

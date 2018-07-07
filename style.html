@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <script type="text/javascript" src="jquery/jquery-3.3.1.min.js"></script>
+  <script>
+    // $(document).ready(function(){
+    // $("p").click(function(){
+    //   $("p").css("background" , "red");
+    //   $("p").css("color" , "blue");
+    //   $("p").css("font-size" , "50px").css("border" ,"1px solid black")
+    //   .css("padding" , "1px");
+    // });
+
+    $(function() {
+      $("button").click(function() {
+        $("#p1").css("background", "red");
+        $("#p2").css("background", "green");
+        $("#p3").css("background", "pink");
+        $("#p4").css("background", "blue");
+        $(".mark").css("color", "blue");
+
+        //$("button").css("font-size" , "50px");
+        $(this).css("font-size", "50px")
+      });
+    });
+    // });
+  </script>
+
+  <title></title>
+</head>
+
+<body>
+  <p id="p1">Markkie</p>
+  <p class="mark" id="p2">Clinkz</p>
+  <p id="p3">Slarda</p>
+  <p id="p4">Invorker</p>
+  <button>click</button>
+</body>
+
+</html>

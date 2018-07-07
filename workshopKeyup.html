@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <script type="text/javascript" src="jquery/jquery-3.3.1.min.js"></script>
+  <script>
+    $(function() {
+        $("#txt1").keyup(function () {
+          showText();
+        })
+        function showText() {
+          var textMax = 50 ;
+          var length = $("#txt1").val().length;
+          var result = textMax - length ;
+          $("#div1").html("<strong>"+result+"</strong>")
+        }
+    });
+  </script>
+  <style>
+
+  </style>
+  <title></title>
+</head>
+<body>
+  <textarea id="txt1" rows="7" cols="25" maxlength="50"></textarea>
+  <div id="div1"></div>
+</body>
+
+</html>

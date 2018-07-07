@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <script type="text/javascript" src="jquery/jquery-3.3.1.min.js"></script>
+  <script>
+    $(function() {
+        $("#menu_java").hover(function () {
+          $("#div1").html("<b>Java</b>")
+        })
+        $("#menu_php").hover(function () {
+          $("#div1").html("<b>PHP</b>")
+        })
+        $("#menu_html").hover(function () {
+          $("#div1").html("<b>HTML</b>")
+        })
+        $("#menu_css").hover(function () {
+          $("#div1").html("<b>CSS</b>")
+        })
+    });
+  </script>
+  <style>
+      div{
+        background-color: pink;
+        font-size: 20px ;
+
+      }
+  </style>
+  <title></title>
+</head>
+
+<body>
+  <a href="#" id="menu_java" >Java</a> /
+  <a href="#" id="menu_php" >PHP</a> /
+  <a href="#" id="menu_html" >HTML</a> /
+  <a href="#" id="menu_css" >CSS</a> /
+  <div id="div1"></div>
+</body>
+
+</html>
